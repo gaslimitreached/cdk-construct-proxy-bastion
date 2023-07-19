@@ -60,11 +60,10 @@ describe('Bastion with proxy', () => {
         'Allow lambda proxy connections',
       );
 
-
       const proxy = db.addProxy('TestProxy', {
         secrets: [db.secret!],
         securityGroups: [connectionGroup],
-        iamAuth: false,
+        iamAuth: true,
         vpc,
       });
 
@@ -72,7 +71,6 @@ describe('Bastion with proxy', () => {
         vpc,
         proxy,
         proxySecurityGroup: lambdaSecurityGroup,
-        secret,
         database: 'test',
         username: 'testuser',
         instanceType: InstanceType.of(InstanceClass.BURSTABLE2, InstanceSize.MICRO),

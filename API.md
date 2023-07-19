@@ -875,7 +875,6 @@ const bastionProps: BastionProps = { ... }
 | <code><a href="#cdk-construct-proxy-bastion.BastionProps.property.database">database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#cdk-construct-proxy-bastion.BastionProps.property.proxy">proxy</a></code> | <code>aws-cdk-lib.aws_rds.IDatabaseProxy</code> | *No description.* |
 | <code><a href="#cdk-construct-proxy-bastion.BastionProps.property.proxySecurityGroup">proxySecurityGroup</a></code> | <code>aws-cdk-lib.aws_ec2.ISecurityGroup</code> | *No description.* |
-| <code><a href="#cdk-construct-proxy-bastion.BastionProps.property.secret">secret</a></code> | <code>aws-cdk-lib.aws_secretsmanager.ISecret</code> | *No description.* |
 | <code><a href="#cdk-construct-proxy-bastion.BastionProps.property.username">username</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -1248,16 +1247,6 @@ public readonly proxySecurityGroup: ISecurityGroup;
 ```
 
 - *Type:* aws-cdk-lib.aws_ec2.ISecurityGroup
-
----
-
-##### `secret`<sup>Required</sup> <a name="secret" id="cdk-construct-proxy-bastion.BastionProps.property.secret"></a>
-
-```typescript
-public readonly secret: ISecret;
-```
-
-- *Type:* aws-cdk-lib.aws_secretsmanager.ISecret
 
 ---
 
